@@ -1,0 +1,64 @@
+<!--Just Improve it and stick to the fedma and consult me
+if want to change something-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuakeAid</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+    <!-- ===== Header Section ===== -->
+     <!--- In the header section, add navigation links for Home, Request Help, Contact, Donate, Volunteer, Feedback, and Login/Sign Up button.--->
+    <header>
+        <div class="logo">QuakeAid</div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./request.html">Request Help</a>
+            <a href="./volunteer.html">Volunteer</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./login.html" class="btn_Login-SignUp">Login / Sign Up</a>
+            <span></span>
+        </nav>
+    </header>
+    <body>
+        <section id="donate">
+  <div class="container">
+    <h2>Donate for Earthquake Relief</h2>
+    <p>Your contribution helps provide food, water, medical aid, and shelter to those affected by earthquakes. Every donation counts!</p>
+
+    <form action="#" method="POST">
+      <!-- Donation Amount -->
+      <label for="amount">Donation Amount (PHP)</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="50">
+
+      <!-- Donor Info -->
+      <label for="donor-name">Full Name</label>
+      <input type="text" id="donor-name" name="donor-name" placeholder="Your full name" required>
+
+      <label for="donor-email">Email Address</label>
+      <input type="email" id="donor-email" name="donor-email" placeholder="your.email@example.com" required>
+
+      <!-- Payment Method -->
+      <label for="payment-method">Payment Method</label>
+      <select id="payment-method" name="payment-method" required>
+        <option value="" disabled selected>Select method</option>
+        <option value="gcash">GCash</option>
+        <option value="paymaya">PayMaya</option>
+        <option value="bank-transfer">Bank Transfer</option>
+      </select>
+
+      <!-- Message -->
+      <label for="message">Message (Optional)</label>
+      <textarea id="message" name="message" rows="4" placeholder="Leave a message (optional)"></textarea>
+
+      <!-- Donate Button -->
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+</section>
+
+    </body>   
+</html>

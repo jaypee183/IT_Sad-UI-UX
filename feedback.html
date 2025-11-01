@@ -1,0 +1,58 @@
+<!--Just Improve it and stick to the fedma and consult me
+if want to change something-->
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Help - QuakeAid</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+   <header>
+        <div class="logo">QuakeAid</div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./request.html">Request Help</a>
+            <a href="./donate.html">Donate</a>
+            <a href="./volunteer.html">Volunteer</a>
+            <a href="./login.html" class="btn_Login-SignUp">Login / Sign Up</a>
+            <span></span>
+        </nav>
+    </header>
+    <body>
+        <section id="feedback">
+  <div class="container">
+    <h2>Feedback</h2>
+    <p>We value your feedback! Please let us know about your experience or suggestions to help us improve our earthquake relief efforts.</p>
+
+    <form action="#" method="POST">
+      <!-- Name -->
+      <label for="feedback-name">Full Name</label>
+      <input type="text" id="feedback-name" name="feedback-name" placeholder="Your full name" required>
+
+      <!-- Email -->
+      <label for="feedback-email">Email Address</label>
+      <input type="email" id="feedback-email" name="feedback-email" placeholder="your.email@example.com" required>
+
+      <!-- Feedback Type -->
+      <label for="feedback-type">Feedback Type</label>
+      <select id="feedback-type" name="feedback-type" required>
+        <option value="" disabled selected>Select type</option>
+        <option value="request-help">Request Help</option>
+        <option value="donate">Donate</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="general">General Feedback</option>
+      </select>
+
+      <!-- Message -->
+      <label for="feedback-message">Your Feedback</label>
+      <textarea id="feedback-message" name="feedback-message" rows="5" placeholder="Write your feedback here..." required></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+ </body>

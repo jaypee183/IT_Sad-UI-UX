@@ -1,0 +1,137 @@
+/* Request Help Section */
+body {
+    background:#222;
+  
+}
+
+/* ===== Header Section ===== */
+header {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px; /* spacing around */
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+    background: #111;
+    height: auto; /* fit content */
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav a {
+    position: relative; /* needed for underline pseudo-element */
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* ===== Underline Effect ===== */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;          /* thickness of underline */
+    left: 50%;
+    bottom: 5px;          /* distance from text */
+    transform: translateX(-50%);
+    background-color: #33fffc; /* underline color */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+/* Hover color (optional) */
+nav a:hover {
+    color: white; /* keeps text color unchanged */
+}
+#request-help {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 50px;
+    background: #111;
+    color: white;
+}
+
+#request-help .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#request-help h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #33fffc;
+}
+
+/* Form Styling */
+#request-help form {
+    display: flex;
+    flex-direction: column;
+}
+
+#request-help label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#request-help input,
+#request-help select,
+#request-help textarea {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+#request-help input::placeholder,
+#request-help textarea::placeholder {
+    color: #aaa;
+}
+
+#request-help button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #33fffc;
+    color: #111;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#request-help button:hover {
+    background: #10b981;
+}
